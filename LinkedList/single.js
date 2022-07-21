@@ -25,7 +25,7 @@ class LinkedList {
 
     insert(position, item) {
         const newNode = new Node(item)
-        if (position < 0 || position >= this.length) return false
+        if (position < 0 || position > this.length) return false
         if (position === 0) {
             newNode.next = this.head
             this.head = newNode
